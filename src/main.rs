@@ -4,6 +4,7 @@ mod day_1;
 mod day_10;
 mod day_11;
 mod day_12_1;
+mod day_12_2;
 mod day_2;
 mod day_3;
 mod day_4_1;
@@ -47,6 +48,7 @@ fn main() {
         "11" => day_11::execute(),
         "12" => match part {
             "1" => day_12_1::execute(),
+            "2" => day_12_2::execute(),
             _ => println!("Day {day} part {part} is not implemented !"),
         },
         _ => println!("Day {day} is not implemented !"),
