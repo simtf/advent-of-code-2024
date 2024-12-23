@@ -1,6 +1,9 @@
 use std::env;
 
 mod day_1;
+mod day_10;
+mod day_11;
+mod day_12_1;
 mod day_2;
 mod day_3;
 mod day_4_1;
@@ -12,8 +15,6 @@ mod day_7;
 mod day_8;
 mod day_9_1;
 mod day_9_2;
-mod day_10;
-mod day_11;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -44,6 +45,10 @@ fn main() {
         },
         "10" => day_10::execute(),
         "11" => day_11::execute(),
+        "12" => match part {
+            "1" => day_12_1::execute(),
+            _ => println!("Day {day} part {part} is not implemented !"),
+        },
         _ => println!("Day {day} is not implemented !"),
     }
 }
