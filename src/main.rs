@@ -5,6 +5,7 @@ mod day_10;
 mod day_11;
 mod day_12_1;
 mod day_12_2;
+mod day_14;
 mod day_2;
 mod day_3;
 mod day_4_1;
@@ -51,6 +52,7 @@ fn main() {
             "2" => day_12_2::execute(),
             _ => println!("Day {day} part {part} is not implemented !"),
         },
+        "14" => day_14::execute(),
         _ => println!("Day {day} is not implemented !"),
     }
 }
